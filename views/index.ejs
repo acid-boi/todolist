@@ -1,5 +1,25 @@
 <%- include('header') %>
 
-<div id="center">This gonna be my centre textbox</div>
+<div class="card text-bg-light" >
+    <div class="card-img-top">
+        <i class="fa fa-calendar"></i> <% const d = new Date() %> <%= d.getDate()%>/<%= d.getMonth()%>/<%= d.getFullYear() %> 
 
+    </div>
+      
+    <div class="card-body">
+      <h5 class="card-title">ToDos</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"> <input type="checkbox" class="task-done">Task-1 </li>
+        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
+        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
+        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
+       
+        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
+      </ul>
+      <i class="fa fa-add"></i>
+      <input type="text" name="" id="task-input"><a href="#" class="btn btn-primary add-btn">Add Task</a>
+    </div>
+  </div>
+  
+  
 <%- include('footer')%>
