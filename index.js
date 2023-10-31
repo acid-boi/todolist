@@ -7,14 +7,17 @@ const port = 3000;
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.listen(port,()=>{
     console.log(`Server running on port ${port}`);
 })
 
+let output = "";
+
 app.get("/",(req,res)=>{
-    res.render("index");
+    res.render("index",{output:output});
 })
 
 
@@ -27,4 +30,13 @@ app.get("/work",(req,res)=>{
     res.send("I work");
 
 
+})
+
+app.post("/",(req,res)=>{
+    let task = req.body.task;
+    
+        output += '<li class="list-group-item"><input type="checkbox" class="task-done">'+task+'</li>';
+    console.log(output);
+    
+    res.render("index.ejs",{output:output});    
 })

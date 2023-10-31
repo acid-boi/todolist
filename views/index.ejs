@@ -9,17 +9,32 @@
     <div class="card-body">
       <h5 class="card-title">ToDos</h5>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"> <input type="checkbox" class="task-done">Task-1 </li>
+        <!-- <li class="list-group-item"> <input type="checkbox" class="task-done">Task-1 </li>
         <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
         <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
         <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
        
-        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li>
+        <li class="list-group-item"><input type="checkbox" class="task-done">Task-2</li> -->
+          
+        
+          <%-output %>
+        
+
+
+
+          
       </ul>
-      <i class="fa fa-add"></i>
-      <input type="text" name="" id="task-input"><a href="#" class="btn btn-primary add-btn">Add Task</a>
+
+      <form action="/" method="post">
+        <i class="fa fa-add"></i>
+      <input type="text" name="task" id="task-input">
+      <input type="submit" value="Add Task" class="btn btn-primary add-btn"></input>
+    </form>
     </div>
   </div>
+ 
+
+ 
   
   
 <%- include('footer')%>
