@@ -36,7 +36,7 @@ app.post("/",(req,res)=>{
     let task = req.body.task;
     
         output += '<li class="list-group-item"><input type="checkbox" class="task-done">'+task+'</li>';
-    console.log(output);
+
     
     res.render("index.ejs",{output:output});    
 })

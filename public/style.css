@@ -37,3 +37,47 @@ li{
 #task-input{
     width: 49%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    li{
+        margin-right: 50px;
+    }
+    
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5%;
+        resize: none;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        margin-top: 5%;
+        padding-top: 2%;
+        background-color: ghostwhite;
+        padding-left: 45%;
+        padding-right: 45%;
+    
+    }
+    .card-pos{
+        padding-left: 50%;
+        padding-top: 5%;
+    }
+    .card-img-top{
+        padding-left: 40%;
+    }
+    
+    .task-done{
+        margin-right: 5%;
+    }
+    
+    .add-btn{
+        margin-left: 5%;
+    }
+    
+    #task-input{
+        width: 49%;
+    }
+    
+  }
