@@ -39,7 +39,7 @@ li{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     li{
         margin-right: 50px;
     }
@@ -56,7 +56,7 @@ li{
         margin-top: 5%;
         padding-top: 2%;
         background-color: ghostwhite;
-        padding-left: 45%;
+        padding-left: 40%;
         padding-right: 45%;
     
     }
