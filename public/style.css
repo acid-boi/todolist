@@ -79,5 +79,8 @@ li{
     #task-input{
         width: 49%;
     }
-    
+  
+    p{
+	display:inline;
+    }
   }

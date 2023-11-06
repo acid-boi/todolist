@@ -15,7 +15,7 @@ app.listen(port,()=>{
 })
 
 let output = "";
-
+let ind = 0;
 app.get("/",(req,res)=>{
     res.render("index",{output:output});
 })
@@ -35,8 +35,8 @@ app.get("/work",(req,res)=>{
 app.post("/",(req,res)=>{
     let task = req.body.task;
     
-        output += '<li class="list-group-item"><input type="checkbox" class="task-done">'+task+'</li>';
+        output += '<li class="list-group-item"><input type="checkbox" class="task-done" id="'+ind+'">'+'<p id="task-'+ind+'">'+task+'</p>'+'</li>';
 
-    
+ console.log(output)   
     res.render("index.ejs",{output:output});    
 })
