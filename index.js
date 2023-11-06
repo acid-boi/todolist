@@ -35,7 +35,8 @@ app.get("/work",(req,res)=>{
 app.post("/",(req,res)=>{
     let task = req.body.task;
     
-        output += '<li class="list-group-item"><input type="checkbox" class="task-done" id="'+ind+'">'+'<p id="task-'+ind+'">'+task+'</p>'+'</li>';
+    ind++;    
+    output += '<li class="list-group-item"><input type="checkbox" class="task-done" id="'+ind+'" onclick="clickhandle(this.name,this.id)">'+'<p id="task-'+ind+'">'+task+'</p>'+'</li>';
 
  console.log(output)   
     res.render("index.ejs",{output:output});    
